@@ -1,1 +1,2 @@
 rootProject.name = 'restful_demo-demo'
+include 'client'

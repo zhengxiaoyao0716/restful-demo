@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/restful-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/restful-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/restful-demo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/restful-demo_main.iml" group="restful-demo" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/restful-demo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/restful-demo_test.iml" group="restful-demo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/client.iml" filepath="$PROJECT_DIR$/.idea/modules/client/client.iml" group="client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/client_main.iml" filepath="$PROJECT_DIR$/.idea/modules/client/client_main.iml" group="client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/client_test.iml" filepath="$PROJECT_DIR$/.idea/modules/client/client_test.iml" group="client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/restful_demo-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/restful_demo-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/restful_demo-demo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/restful_demo-demo_main.iml" group="restful_demo-demo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/restful_demo-demo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/restful_demo-demo_test.iml" group="restful_demo-demo" />
     </modules>
   </component>
 </project>

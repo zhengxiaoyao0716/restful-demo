@@ -1,4 +1,4 @@
-package com.zheng0716.restful_demo.util;
+package com.zheng0716.restful_demo.client;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
@@ -14,28 +14,10 @@ import java.util.*;
  */
 @SuppressWarnings("Duplicates")
 public final class SecurityUtil {
-    private final static SecurityUtil instance = new SecurityUtil("Secret key for Restful Demo, gen@2016/9/11");
-
-    public static SecurityUtil getInstance(String accesskey) {
-        // TODO: 2016/9/16 根据用户选取实例
-        return "test".equals(accesskey) ? instance : null;
-    }
-
     private final String key;
 
-    private SecurityUtil(String key) {
+    public SecurityUtil(String key) {
         this.key = key;
-    }
-
-    /**
-     * 验证.
-     *
-     * @param content 签名后的Json
-     * @return 校验成败
-     */
-    public boolean verify(Map<String, Object> content) {
-        String sign = (String) content.get("_sign");
-        return sign != null && sign.equals(hmacSha256Hex(sortMap(content)));
     }
 
     /**

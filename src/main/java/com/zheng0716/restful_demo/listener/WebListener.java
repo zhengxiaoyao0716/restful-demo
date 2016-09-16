@@ -18,8 +18,8 @@ public class WebListener implements ServletRequestListener {
 
     @Override
     public void requestInitialized(ServletRequestEvent sre) {
-        HttpServletRequest request = (HttpServletRequest) sre.getServletRequest();
-        Enumeration<String> headerIterator = request.getHeaderNames();
+//        HttpServletRequest request = (HttpServletRequest) sre.getServletRequest();
+//        Enumeration<String> headerIterator = request.getHeaderNames();
 //        while (headerIterator.hasMoreElements()) {
 //            String headerName = headerIterator.nextElement();
 //            System.out.println(headerName + ": " + request.getHeader(headerName));
