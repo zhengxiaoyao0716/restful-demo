@@ -26,12 +26,13 @@ public class GuestApi extends BaseApi {
 
     @RequestMapping(value = "/time/now", method = RequestMethod.GET)
     public Map<String, Object> nowTime() {
+//        request.getParameter("param");  // TODO GET方法取得URL参数
         return makeResp(DateFormat.getDateTimeInstance().format(new Date()));
     }
 
     @RequestMapping(value = "/time/add", method = RequestMethod.POST)
     public Map<String, Object> addTime() {
-        Map<String, Object> req = getReqJson();
+        Map<String, Object> req = getReqJson();  // TODO POST方法取得JSON参数
         if (!verify(req)) {
             return makeResp("数据签名错误，可能已被篡改");
         }

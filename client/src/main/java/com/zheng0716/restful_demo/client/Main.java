@@ -18,10 +18,11 @@ import java.util.Map;
  */
 public class Main {
     private static final String HOST = "http://localhost:8080";
-    private static final String ACCESS_KEY = "test";
+    private static String ACCESS_KEY = "test";
     private static final SecurityUtil securityUtil = new SecurityUtil("Secret key for Restful Demo, gen@2016/9/11");
 
     public static void main(String[] args) throws IOException {
+//        ACCESS_KEY = "test01";  // TODO 假定授权错误
         httpReq(HOST + "/api/guest/time/now", "GET", null);
 
         Map<String, Object> data = new HashMap<>();
@@ -29,6 +30,7 @@ public class Main {
         data.put("month", 0);
         data.put("date", 3);
         data = securityUtil.signed(data);
+//        data.put("date", 6);  // TODO 假定篡改数据
         httpReq(HOST + "/api/guest/time/add", "POST", JSONObject.toJSONBytes(data));
     }
 

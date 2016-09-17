@@ -66,7 +66,7 @@ public class BaseApi {
     }
 
     /**
-     * 获取Json数据.
+     * 获取Json数据（POST）.
      *
      * @return Json数据（null if failed.）
      */
